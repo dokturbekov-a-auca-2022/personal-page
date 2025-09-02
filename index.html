@@ -1,13 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Perfume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: linear-gradient(to bottom, #fff9f5, #fceee6);
+      color: #333;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #5a3e36;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #7a5c50;
+      margin-bottom: 40px;
+    }
+
+    .perfume {
+      width: 280px;
+      height: auto;
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 15px 25px rgba(0,0,0));
+      border-radius: 20px;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 14px 30px;
+      background: #5a3e36;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #7a5c50;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Essence of Perfumes</h1>
+  <h2>Experience the fragrance without touching it</h2>
+  <img src="https://cdn.imgchest.com/files/y8xcnj9ne34.png" alt="Perfume Bottle" class="perfume">
+  <a href="#" class="btn">Shop Now</a>
+</body>
 </html>
