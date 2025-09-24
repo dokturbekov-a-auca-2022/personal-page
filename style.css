@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: linear-gradient(to bottom, #fff9f5, #fceee6);
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #5a3e36;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #7a5c50;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 2px solid #5a3e36;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 14px 24px;
+    border: none;
+    background: #5a3e36;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background: #7a5c50;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #5a3e36;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    color: #5a3e36;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  footer {
+    background: #5a3e36;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  footer nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer nav a:hover {
+    color: #fceee6;
+  }
+  
