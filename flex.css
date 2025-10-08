@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url("https://cdn.imgchest.com/files/w7w6cvr8eye.png");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  
+  .container > div {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 200px; 
+  }
+  
+
+  .box1 {
+    flex-basis: 100%;
+  }
+  
+  .box2  { flex-basis: 234px;}
+  .box3  { flex-basis: 565px;} 
+  .box4  { flex-basis: 565px;}
+  .box5  { flex-basis: 1100px;}
+  .box6  { flex-basis: 260px;}
