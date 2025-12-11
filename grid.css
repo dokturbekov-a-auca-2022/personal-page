@@ -1,0 +1,114 @@
+/* RESET */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    max-width: 1400px;
+
+    grid-template-areas:
+        "b1 b1 b1"
+        "b2 b2 b2"
+        "b3 b3 b3"
+        "b4 b6 b7"
+        "b5 b5 b5";
+
+    grid-template-columns:
+        minmax(50px, 17%)
+        minmax(50px, 48.5%)
+        minmax(50px, 17%);
+
+    grid-template-rows:
+        minmax(40px, auto)
+        minmax(168px, auto)
+        minmax(38px, auto)
+        minmax(385px, auto)
+        minmax(385px, auto);
+}
+
+.container > * {
+    border: 2px dotted blue;
+    font-size: 2rem;
+    color: blue;
+}
+
+.box1 { grid-area: b1; }
+.box2 { grid-area: b2; }
+.box3 { grid-area: b3; }
+.box4 { grid-area: b4; }
+.box6 { grid-area: b6; }
+.box7 { grid-area: b7; }
+.box5 { grid-area: b5; }
+
+/* Entire box3 bar */
+.box3 {
+    background: white;
+    border-bottom: 3px solid #f59612; /* thin orange underline */
+    opacity: 0.5;
+}
+
+/* UL → main menu bar layout */
+.box3 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 30px;      /* exact height */
+    padding: 0;
+    gap: 0;
+    justify-content: flex-start;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.01px;
+}
+
+/* Категории block */
+.box3 ul li.categories {
+    background: linear-gradient(to right, #f4590f, #ff9c00);
+    color: black;
+    font-weight: bold;
+    padding: 10px 60px;
+    border-radius: 3px 3px 0 0; /* slight rounding */
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;       /* space between icon and text */
+    margin-right: 1.7rem;
+}
+
+/* Menu text items */
+.box3 ul li {
+    margin-right: 1.2rem;   
+    font-size: 15px;
+    color: #333;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "b1"
+            "b2"
+            "b3"
+            "b4"
+            "b6"
+            "b7"
+            "b5";
+    }
+
+    .box3 ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    
+}
