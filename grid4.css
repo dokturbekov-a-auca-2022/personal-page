@@ -6,15 +6,12 @@
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-
 }
 
 .container {
     display: grid;
     width: 100%;
     max-width: 1800px;
-
-
 
     grid-template-areas:
         "b1 b1 b1"
@@ -57,8 +54,8 @@ body{
 
 .box2-corner-img {
     position: absolute;
-    top: 20px;     
-    left: 4px;    
+    top: 20px;
+    left: 4px;
     display: block;
     z-index: 2;
 }
@@ -71,7 +68,6 @@ body{
     margin: 0;
     z-index: 1;
 }
-
 
 .box3 {
     background-color: rgba(255, 255, 255, 0.25);
@@ -90,7 +86,6 @@ body{
     justify-content: flex-start;
     font-size: 14px;
 }
-
 
 .box3 ul li.categories {
     background: linear-gradient(to right, #f4590f, #ff9c00);
@@ -136,18 +131,12 @@ body{
 }
 
 .hero-text h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.25;
     margin: 10px 5px;
     padding: 10px;
     letter-spacing: 4px;
 }
-
-.box4{
-    height: 405px;
-}
-
-
 
 @media (max-width: 500px) {
 
