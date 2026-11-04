@@ -1,0 +1,12 @@
+{
+  "name": "mercymed-editor-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild editor.js --bundle --format=esm --outfile=../../hw6/admin/editor.bundle.js --minify"
+  },
+  "dependencies": {
+    "@neondatabase/auth": "0.6.0-beta",
+    "esbuild": "0.28.2"
+  }
+}
